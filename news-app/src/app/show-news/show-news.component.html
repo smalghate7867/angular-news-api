@@ -1,0 +1,25 @@
+<input type="text float-right"  name="search" id="search">
+<header>News API</header>
+ <div class="card col-md-4 float-left" *ngFor="let newsref of news.articles" style="height: 400px;" > 
+      <div class="card-body">
+        <a href="{{newsref.url}}">
+            <img src="{{newsref.urlToImage}}" alt="" srcset="" class="mr-2  card-img-top img-fluid">
+        <p>{{newsref.author}}</p>  
+    </a>
+          <p>{{newsref.title}}</p> 
+      </div>
+</div>
+<!-- 
+<header>
+    <h1 class="text-center text-white">Business News</h1>
+  </header>
+  <div class="card col-md-4 float-left" *ngFor="let news of indiaBusinessNews.articles" style="height: 350px;">
+    <div class="card-body">
+      <a href={{news.url}}>
+        <figure>
+          <img src={{news.urlToImage}} alt="Image regarding the news" class="mr-2 card-img-top img-fluid">
+        </figure>
+      </a>
+      <h6 class="text-center">{{news.title}}</h6>
+    </div>
+  </div> -->
